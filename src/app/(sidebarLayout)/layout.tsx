@@ -6,7 +6,7 @@ const SidebarLayout = ({ children }: { children: React.ReactNode }) => {
       <div>
         <Sidebar />
       </div>
-      <div>{children}</div>
+      <div className="w-full">{children}</div>
     </div>
   );
 };

@@ -52,12 +52,12 @@ const Sidebar = () => {
   return (
     <div>
       <div
-        className={`bg-gray-200 ${
+        className={`bg-[#2a2b89] text-white ${
           open ? "w-72" : "w-0"
         } duration-500 p-5 relative h-screen`}
       >
         <BsArrowLeftShort
-          className={`bg-white text-orange-900 rounded-full absolute -right-3 top-1/2 text-3xl border border-gray-600 cursor-pointer ${
+          className={`bg-[#2a2b89] text-white rounded-full absolute -right-3 top-1/2 text-3xl border border-gray-600 cursor-pointer ${
             !open && "rotate-180"
           } `}
           onClick={() => setOpen(!open)}
@@ -76,9 +76,7 @@ const Sidebar = () => {
               <>
                 <li
                   key={index}
-                  className={`hover:bg-indigo-300 p-2 rounded cursor-pointer text-sm  flex items-center gap-x-2 ${
-                    menu.spacing ? "mt-9" : "mt-2"
-                  }`}
+                  className={`hover:bg-indigo-300 p-2 rounded cursor-pointer text-sm  flex items-center gap-x-2 mt-2 `}
                 >
                   <span className="text-2xl block float-left">
                     {menu.icon ? menu.icon : <RiDashboardLine />}
@@ -102,9 +100,7 @@ const Sidebar = () => {
                     {menu.submenuItems.map((submenu, index) => (
                       <li
                         key={index}
-                        className={`hover:bg-indigo-300 p-2 rounded cursor-pointer text-sm  flex items-center gap-x-2 px-4 ${
-                          menu.spacing ? "mt-9" : "mt-2"
-                        }`}
+                        className={`hover:bg-indigo-300 p-2 rounded cursor-pointer text-sm  flex items-center gap-x-2 px-4 mt-2`}
                       >
                         <span>{submenu.title}</span>
                       </li>
