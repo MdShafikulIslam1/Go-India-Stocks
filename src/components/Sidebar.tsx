@@ -53,7 +53,7 @@ const Sidebar = () => {
     <div>
       <div
         className={`bg-[#2a2b89] text-white ${
-          open ? "w-72" : "w-0"
+          open ? "w-52 md:w-72" : "w-0"
         } duration-500 p-5 relative h-screen`}
       >
         <BsArrowLeftShort

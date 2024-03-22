@@ -4,9 +4,9 @@ import Image from "next/image";
 const MarketStoryCard = ({ item }: { item: IMarketStoryItem }) => {
   return (
     <div className="overflow-hidden border h-64 ">
-      <div className="image w-full h-36">
+      <div className="image w-full h-36 overflow-hidden">
         <Image
-          className="w-full h-full object-cover rounded"
+          className="w-full h-full object-cover rounded hover:scale-110 overflow-hidden duration-700"
           src={item.image}
           alt="market story"
           width={100}
