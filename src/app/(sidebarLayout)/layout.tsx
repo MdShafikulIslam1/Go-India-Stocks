@@ -2,11 +2,11 @@ import Sidebar from "@/components/Sidebar";
 
 const SidebarLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex">
+    <div className="flex max-w-[1440px] mx-auto gap-6">
       <div>
         <Sidebar />
       </div>
-      <div className="w-full">{children}</div>
+      <div className="w-full p-2">{children}</div>
     </div>
   );
 };
