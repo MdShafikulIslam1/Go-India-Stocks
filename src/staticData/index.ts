@@ -1,4 +1,5 @@
 import logo from "@/assests/images/market_story.jpg";
+
 export const discussionForumData = [
   {
     avatar: "/default_avatar.png",

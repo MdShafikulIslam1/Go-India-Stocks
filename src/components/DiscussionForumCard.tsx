@@ -27,7 +27,7 @@ const DiscussionForumCard = ({ item }: { item: IDiscussionForumItem }) => {
           <p>{item.description}</p>
         </div>
 
-        <div className="flex justify-between my-2 md:my-5 w-full">
+        <div className="grid grid-cols-2 md:grid-cols-4 justify-between my-2 md:my-5 w-full">
           <div className="flex items-center gap-1 md:gap-2">
             <FaHeart className="" />
             <span>{item.loveReact}</span>
@@ -38,7 +38,7 @@ const DiscussionForumCard = ({ item }: { item: IDiscussionForumItem }) => {
           </div>
           <div className="flex items-center gap-1 md:gap-2">
             <FaCommentAlt className="" />
-            <span>{item.comments} comments</span>
+            <span>{item.comments}</span>
           </div>
           <div className="flex items-center gap-1 md:gap-2">
             <FaShareAlt className="" />
